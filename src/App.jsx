@@ -62,10 +62,10 @@ export default function App(){
     }
 
     return (
-        <div className="">
+        <>
             <Editor editorChange={handleChange} value={content}></Editor>
             <Previewer content={marked ? marked.parse(content) : ""}>
             </Previewer>
-        </div>
+        </>
     )
 }
